@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>JS01_Rate-Limiters</title>
+    </head>
+    <body>
+       
+        <h1>Rate Limiters at Client Side</h1>
+        <div class="debounce-container">
+             <h3>Debounce use case</h3>
+             <span>Search Something</span>
+             <input oninput="onChangeInputSearch(event)" type="text" id="input-js01" />
+             <div class="result" id="result1-js01"></div>
+        </div>
+        <div class="debounce-container">
+             <h3>Throttle use case</h3>
+             <span>make payment</span>
+             <button id="btn-js01" onclick="onPaymentInitiate()">Pay</button>
+             <div class="result" id="result2-js01"></div>
+        </div>
+
+         <script src="./js01_debounce.js"></script>
+         <script src="./js01_throttle.js"></script>
+    </body>
+</html>
