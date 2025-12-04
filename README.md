@@ -13,3 +13,35 @@ Debounce : The core idea is to delay the execution of a function until a certain
 Throttle : A function runs at most once within a specified time interval.
                      
 
+2. Closure In Javascript 
+It is going to be very interesting topic as closure contribute a lot in Javascript.It is an amazing feature which is part of Js.We should say that javascript already a rich language but closure increases it’s power a lot.
+
+What :       It is a function which remembers its lexical scope or we can say that function along with lexical memory.
+
+“Whenever an inner function returns from outer function and executed  sometime later but during the execution it still remembers the outer functions scope and variables even though the outer functions does not exists any more”
+
+
+
+
+use cases : 
+                   
+Use case 1 — Data encapsulation , Modules  and private variables
+Use case 2 — Memoization
+
+Use case 3 — Partial application
+
+The formatMoney function takes two optional arguments: prefix (defaulting to “$”) and precision (defaulting to 2). It returns an inner function that takes a single argument (number). This inner function uses the captured values of prefix and precision from the closure to format the provided number with the specified prefix and number of decimal places.
+
+function formatMoney(prefix = "$", precision = 2) {
+  return function(number) {
+    return prefix + number.toFixed(precision);
+  }
+}
+
+const usdFormatter = formatMoney("$", 2);
+const eurFormatter = formatMoney("€", 3);
+
+console.log(usdFormatter(123.456)); // Output: $123.46
+console.log(eurFormatter(789.0123)); // Output: €789.012
+
+By calling formatMoney with specific values for prefix and precision, we create new functions like usdFormatter and eurFormatter. These new functions are partially applied versions of the original formatMoney function, with the currency symbol and number of decimal places already set.
