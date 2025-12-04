@@ -1,0 +1,35 @@
+<html>
+    <head><title>Closure in JS</title></head>
+    <body>
+        <div class="closure-container">
+              <h2>Closure use cases</h3>
+              <div class="expaination-container">
+                     <h4>Explaination</h4>
+                     <p>function with It's lexical scope memory</p>
+              </div>
+              <div class="counter-app-container">
+                     <h4>Counter App (Modularization , Private variable concept  and encapsulation)</h4>
+                     <div id="result1-JS02"></div>
+                     <button onclick="increment()">+</button>
+                     <button onclick="decrement()">-</button>
+              </div>
+              <div class="memoization-container">
+                     <h4>Heavy computational function  (memoization)</h4>
+                     <span>Enter any number...to calulate some complex logic</span>
+                     <input type="number" oninput="onInputChange(event)"/>
+                     <button onclick="calculate()">Calculate</button>
+                    <div id="result2-JSO2"></div>
+              </div>
+               <div class="partial-application-container">
+                     <h4>Partial application (formatter)</h4>
+                     <span>Enter any number...to get formatted currency</span>
+                     <input type="number" oninput="onInputChange2(event)"/>
+                     <button onclick="format()">Convert</button>
+                    <div id="result3-JSO2"></div>
+              </div>
+        </div>
+       <script src="./closure_uc1.js"></script> 
+       <script src="./closure_uc2.js"></script> 
+       <script src="./closure_uc3.js"></script> 
+    </body>
+</html>
