@@ -20,14 +20,10 @@ What :       It is a function which remembers its lexical scope or we can say th
 
 “Whenever an inner function returns from outer function and executed  sometime later but during the execution it still remembers the outer functions scope and variables even though the outer functions does not exists any more”
 
-
-
-
 use cases : 
                    
 Use case 1 — Data encapsulation , Modules  and private variables
 Use case 2 — Memoization
-
 Use case 3 — Partial application
 
 The formatMoney function takes two optional arguments: prefix (defaulting to “$”) and precision (defaulting to 2). It returns an inner function that takes a single argument (number). This inner function uses the captured values of prefix and precision from the closure to format the provided number with the specified prefix and number of decimal places.
