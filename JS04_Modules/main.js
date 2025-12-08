@@ -1,3 +1,5 @@
+// https://javascript.info/modules-intro
+
 import counter from './Counter.js';
 const display = document.getElementById('display-JS04');
 document.getElementById('btn1-JS04').addEventListener('click', onIncrement);
